@@ -13,7 +13,7 @@ class MainLabel:UILabel{
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.font = UIFont.boldSystemFont(ofSize: 20.0)
+        self.font = UIFont.systemFont(ofSize: 20, weight: .heavy) 
         self.textColor = UIColor.white
     }
 }

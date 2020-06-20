@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - IQKeyboardManagerSwift (6.0.5)
+  - ObjectMapper (3.5.3)
+  - ReachabilitySwift (5.0.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - AlamofireImage (~> 3.1)
+  - IQKeyboardManagerSwift (~> 6.0.4)
+  - ObjectMapper (~> 3.3)
+  - ReachabilitySwift
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - IQKeyboardManagerSwift
+    - ObjectMapper
+    - ReachabilitySwift
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  IQKeyboardManagerSwift: c14eca30f6001457d6ddf25e313f23fb6578c41c
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 411e57e05f10b51f02bbe14b6c8794cbd4bac289
+
+COCOAPODS: 1.9.3

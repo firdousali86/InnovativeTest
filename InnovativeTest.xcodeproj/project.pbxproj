@@ -13,6 +13,7 @@
 		63832392249E618400AE6356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63832390249E618400AE6356 /* Main.storyboard */; };
 		63832394249E618600AE6356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63832393249E618600AE6356 /* Assets.xcassets */; };
 		63832397249E618600AE6356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63832395249E618600AE6356 /* LaunchScreen.storyboard */; };
+		638323A1249E659100AE6356 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 638323A0249E659100AE6356 /* gradient.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		63832393249E618600AE6356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63832396249E618600AE6356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63832398249E618600AE6356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638323A0249E659100AE6356 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		63832389249E618400AE6356 /* InnovativeTest */ = {
 			isa = PBXGroup;
 			children = (
+				6383239E249E657000AE6356 /* Resources */,
 				6383238A249E618400AE6356 /* AppDelegate.swift */,
 				6383238C249E618400AE6356 /* SceneDelegate.swift */,
 				6383238E249E618400AE6356 /* ViewController.swift */,
@@ -65,6 +68,22 @@
 				63832398249E618600AE6356 /* Info.plist */,
 			);
 			path = InnovativeTest;
+			sourceTree = "<group>";
+		};
+		6383239E249E657000AE6356 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6383239F249E657E00AE6356 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6383239F249E657E00AE6356 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				638323A0249E659100AE6356 /* gradient.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63832397249E618600AE6356 /* LaunchScreen.storyboard in Resources */,
+				638323A1249E659100AE6356 /* gradient.png in Resources */,
 				63832394249E618600AE6356 /* Assets.xcassets in Resources */,
 				63832392249E618400AE6356 /* Main.storyboard in Resources */,
 			);

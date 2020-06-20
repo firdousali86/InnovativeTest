@@ -52,7 +52,92 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZV0-di-TP9">
                                 <rect key="frame" x="0.0" y="453" width="414" height="409"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJD-KC-Hrf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL0-HS-DYW" customClass="HeadingLabel" customModule="InnovativeTest" customModuleProvider="target">
+                                                <rect key="frame" x="82" y="0.0" width="250" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="JvH-Ep-Voa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LTL-jw-nu7">
+                                                <rect key="frame" x="82" y="26" width="250" height="34"/>
+                                                <color key="backgroundColor" red="0.38813793660000001" green="0.70309501890000003" blue="0.86485052110000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="3mG-Vh-3gT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="BL0-HS-DYW" firstAttribute="centerX" secondItem="EJD-KC-Hrf" secondAttribute="centerX" id="0cY-a7-QmV"/>
+                                            <constraint firstItem="BL0-HS-DYW" firstAttribute="top" secondItem="EJD-KC-Hrf" secondAttribute="top" id="8ZC-hf-RK8"/>
+                                            <constraint firstItem="LTL-jw-nu7" firstAttribute="top" secondItem="BL0-HS-DYW" secondAttribute="bottom" constant="5" id="9t2-7A-YQK"/>
+                                            <constraint firstItem="LTL-jw-nu7" firstAttribute="centerX" secondItem="EJD-KC-Hrf" secondAttribute="centerX" id="XFj-dS-Ggl"/>
+                                            <constraint firstAttribute="height" constant="80" id="fq9-eN-3sm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsY-g2-BW2">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKG-JL-nid" customClass="HeadingLabel" customModule="InnovativeTest" customModuleProvider="target">
+                                                <rect key="frame" x="82" y="0.0" width="250" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="lDG-bW-gJJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gk0-qr-fBb">
+                                                <rect key="frame" x="82" y="26" width="250" height="34"/>
+                                                <color key="backgroundColor" red="0.39254674319999999" green="0.71097695829999996" blue="0.86852067710000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="GPz-oo-kiP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gk0-qr-fBb" firstAttribute="top" secondItem="cKG-JL-nid" secondAttribute="bottom" constant="5" id="6yx-mM-ODX"/>
+                                            <constraint firstItem="gk0-qr-fBb" firstAttribute="centerX" secondItem="jsY-g2-BW2" secondAttribute="centerX" id="GPP-sk-gMi"/>
+                                            <constraint firstAttribute="height" constant="80" id="RIc-BK-e6X"/>
+                                            <constraint firstItem="cKG-JL-nid" firstAttribute="top" secondItem="jsY-g2-BW2" secondAttribute="top" id="YLV-FO-UIT"/>
+                                            <constraint firstItem="cKG-JL-nid" firstAttribute="centerX" secondItem="jsY-g2-BW2" secondAttribute="centerX" id="nxz-UN-uSI"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-zo-QFB" customClass="RoundRectButton" customModule="InnovativeTest" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="195" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.89795047039999998" green="0.89810132980000001" blue="0.89793062209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="hQh-u6-33x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <state key="normal" title="ENTER">
+                                            <color key="titleColor" red="0.1609030068" green="0.67073315379999998" blue="0.88832241300000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EJD-KC-Hrf" firstAttribute="leading" secondItem="ZV0-di-TP9" secondAttribute="leading" id="003-f8-e8E"/>
+                                    <constraint firstItem="MN8-zo-QFB" firstAttribute="top" secondItem="jsY-g2-BW2" secondAttribute="bottom" constant="35" id="AWx-Un-n2V"/>
+                                    <constraint firstItem="EJD-KC-Hrf" firstAttribute="top" secondItem="ZV0-di-TP9" secondAttribute="top" id="ShY-Sx-8sf"/>
+                                    <constraint firstItem="jsY-g2-BW2" firstAttribute="top" secondItem="EJD-KC-Hrf" secondAttribute="bottom" id="gp4-Xv-wi1"/>
+                                    <constraint firstAttribute="trailing" secondItem="EJD-KC-Hrf" secondAttribute="trailing" id="muD-TP-1Dl"/>
+                                    <constraint firstItem="jsY-g2-BW2" firstAttribute="leading" secondItem="ZV0-di-TP9" secondAttribute="leading" id="nNf-wY-7pr"/>
+                                    <constraint firstItem="MN8-zo-QFB" firstAttribute="centerX" secondItem="ZV0-di-TP9" secondAttribute="centerX" id="vD6-bi-3Ek"/>
+                                    <constraint firstAttribute="trailing" secondItem="jsY-g2-BW2" secondAttribute="trailing" id="yrh-Jb-4aQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

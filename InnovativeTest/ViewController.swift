@@ -36,8 +36,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEnterTap(){
-        print(self.userNameField.text)
-        print(self.passwordField.text)
+        if(!Utils.isStringEmptyOrNull(strToCheck: self.userNameField.text!) && !Utils.isStringEmptyOrNull(strToCheck: self.passwordField.text!)){
+            ServiceManager.postLogin(username: self.userNameField.text!, password: self.passwordField.text!, completionHandler: { (response) in
+//                if(response != nil && (response as ServiceObject).token != nil){
+//                    UserDefaultsHelper.setToken((response as ServiceObject).token as String)
+//                }
+            }) { (error) in
+                
+            }
+        }
     }
 }
 

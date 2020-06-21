@@ -18,9 +18,10 @@ class DashboardController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.allowsSelection = false;
+        self.tableView.allowsSelection = false;
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
-        tableView?.register(UINib(nibName: "ItemListCell", bundle:nil),
+        self.tableView?.register(UINib(nibName: "ItemListCell", bundle:nil),
                            forCellReuseIdentifier: cellReuseIdentifier)
         
         ServiceManager.getItemList(completionHandler: { (response) in
@@ -42,7 +43,7 @@ class DashboardController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.itemName.text = itemRow.name
         cell.itemDesc.text = itemRow.desc
-        cell.itemPrice.text =  NSString(format: "%.2f", itemRow.price!) as String
+        cell.itemPrice.text = "Rs." +  (NSString(format: "%.2f", itemRow.price!) as String) as String
         
         
 //        cell.testLabel.text = "test2"

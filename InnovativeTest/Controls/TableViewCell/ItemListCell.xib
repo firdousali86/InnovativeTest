@@ -16,6 +16,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phm-pu-Gcl">
+                        <rect key="frame" x="0.0" y="6" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.13563230630000001" green="0.6079022288" blue="0.83770924810000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Ohd-8t-n2L"/>
+                        </constraints>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dRZ-mj-KGh">
                         <rect key="frame" x="15" y="15" width="110" height="110"/>
                         <constraints>
@@ -81,14 +88,27 @@
                             <constraint firstItem="MWv-Ei-FJX" firstAttribute="leading" secondItem="q0k-qQ-EJ9" secondAttribute="trailing" constant="10" id="vec-GL-Iey"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAF-To-kSu">
+                        <rect key="frame" x="0.0" y="133" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.13575720790000001" green="0.61187428239999997" blue="0.83748286959999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gWR-mw-paS"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="qvc-ZS-QPY" secondAttribute="bottom" constant="10" id="0hB-w0-JX3"/>
                     <constraint firstAttribute="trailing" secondItem="qvc-ZS-QPY" secondAttribute="trailing" constant="10" id="JwI-a8-cVV"/>
+                    <constraint firstAttribute="trailing" secondItem="iAF-To-kSu" secondAttribute="trailing" id="N2j-oe-l37"/>
+                    <constraint firstItem="iAF-To-kSu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="P8H-h6-f0W"/>
+                    <constraint firstAttribute="bottom" secondItem="iAF-To-kSu" secondAttribute="bottom" constant="6" id="QrL-sb-xGs"/>
                     <constraint firstItem="qvc-ZS-QPY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ui6-jc-3Qe"/>
                     <constraint firstItem="qvc-ZS-QPY" firstAttribute="leading" secondItem="dRZ-mj-KGh" secondAttribute="trailing" constant="10" id="XfT-Gy-fW3"/>
                     <constraint firstItem="dRZ-mj-KGh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bjk-53-PQD"/>
+                    <constraint firstItem="Phm-pu-Gcl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eTh-Pw-gPA"/>
+                    <constraint firstItem="Phm-pu-Gcl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="lN9-m4-SKA"/>
                     <constraint firstAttribute="bottom" secondItem="dRZ-mj-KGh" secondAttribute="bottom" constant="15" id="txJ-5x-F3c"/>
+                    <constraint firstAttribute="trailing" secondItem="Phm-pu-Gcl" secondAttribute="trailing" id="vK8-1q-jua"/>
                     <constraint firstItem="dRZ-mj-KGh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="xP9-JC-AqF"/>
                 </constraints>
             </tableViewCellContentView>

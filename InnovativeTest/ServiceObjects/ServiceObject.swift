@@ -1,18 +1,17 @@
 //
-//  AuthObject.swift
-//  InnovativeTest
+//  FeedItem.swift
+//  EremNews
 //
-//  Created by Digital Dividend on 6/21/20.
-//  Copyright © 2020 Firdous Ali. All rights reserved.
+//  Created by Firdous Ali on 21/03/2018.
+//  Copyright © 2018 Firdous Ali. All rights reserved.
 //
 
 import Foundation
 
-class ServiceObject: NSObject {
-
-    var token:String = ""
-    
-    init(token:String){
-        self.token = token
+@objc public class ServiceObject : NSObject{
+    var token:String?;
+      
+    public func setObjectData(_ serviceDict : NSDictionary){
+        self.token = serviceDict.object(forKey: "token") as? String
     }
 }

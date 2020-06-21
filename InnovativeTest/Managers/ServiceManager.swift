@@ -21,4 +21,16 @@ class ServiceManager: NSObject {
             }
         }
     }
+    
+    static func getItemList(completionHandler: @escaping CompletionHandler, errorHandler: @escaping ErrorHandler){
+        HttpRequestManager.sharedInstance.post(path: Constants.ServiceApis.kApiGetItemList, parameters: [:], completionHandler: { (response) in
+            if(completionHandler != nil){
+                completionHandler(response)
+            }
+        }) { (error) in
+            if(errorHandler != nil){
+                errorHandler(error)
+            }
+        }
+    }
 }

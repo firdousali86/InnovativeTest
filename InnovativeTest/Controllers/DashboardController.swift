@@ -13,7 +13,14 @@ class DashboardController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ServiceManager.getItemList(completionHandler: { (response) in
+            let serviceObject = ServiceObject()
+            serviceObject.setObjectData(response as! NSDictionary)
+            
+            
+        }) { (error) in
+            
+        }
     }
     
 

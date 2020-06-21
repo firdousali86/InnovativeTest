@@ -23,6 +23,10 @@ typealias ErrorHandler = (_ error:Any) -> Void
         
         headers["Content-Type"] = "application/json"
         
+        if(UserDefaultsHelper.sharedInstance.getToken() != nil){
+            headers["Authorization"] = "Bearer " + UserDefaultsHelper.sharedInstance.getToken()!
+        }
+        
         Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.init(options: []), headers: headers).response { (response) in
 
             let json = try? JSONSerialization.jsonObject(with: response.data!, options: [])

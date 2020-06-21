@@ -10,11 +10,19 @@
 import Foundation
 
 @objc public class ServiceObject : NSObject{
-    var token:String?;
     var itemList:[Item] = []
       
     public func setObjectData(_ serviceDict : NSDictionary){
-        self.token = serviceDict.object(forKey: "token") as? String
-        self.itemList = serviceDict.object(forKey: "itemList") as! [Item]
+        let records:NSArray? = (serviceDict.object(forKey: "itemList") as! [Item] as NSArray)
+        var indexer = 0
+        
+        for record in records! {
+            let itemObject = Item()
+            itemObject.setObjectData(record as! NSDictionary)
+            
+            self.itemList.append(itemObject)
+            indexer += 1
+        }
+        
     }
 }

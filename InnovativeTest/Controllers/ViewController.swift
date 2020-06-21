@@ -47,10 +47,10 @@ class ViewController: UIViewController {
         if(!Utils.isStringEmptyOrNull(strToCheck: self.userNameField.text!) && !Utils.isStringEmptyOrNull(strToCheck: self.passwordField.text!)){
             
             ServiceManager.postLogin(username: self.userNameField.text!, password: self.passwordField.text!, completionHandler: { (response) in
-                let serviceObject = ServiceObject()
-                serviceObject.setObjectData(response as! NSDictionary)
+                let authServiceObject = AuthServiceObject()
+                authServiceObject.setObjectData(response as! NSDictionary)
                 
-                UserDefaultsHelper.sharedInstance.setToken(token: serviceObject.token!)
+                UserDefaultsHelper.sharedInstance.setToken(token: authServiceObject.token!)
                 
                 self.openDashboardController()
                 

@@ -195,10 +195,29 @@
                     <view key="view" contentMode="scaleToFill" id="0M2-ud-eQt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-47-Vsu">
+                                <rect key="frame" x="0.0" y="330.5" width="414" height="531.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="wQO-sz-SRT" id="K7h-18-l1p"/>
+                                    <outlet property="delegate" destination="wQO-sz-SRT" id="Ywk-Qp-qRY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IPt-rg-MzO" firstAttribute="trailing" secondItem="mmc-47-Vsu" secondAttribute="trailing" id="BlA-Mk-8hb"/>
+                            <constraint firstItem="mmc-47-Vsu" firstAttribute="leading" secondItem="IPt-rg-MzO" secondAttribute="leading" id="SiR-Nw-tB0"/>
+                            <constraint firstItem="IPt-rg-MzO" firstAttribute="bottom" secondItem="mmc-47-Vsu" secondAttribute="bottom" id="eUP-fo-H9I"/>
+                            <constraint firstItem="mmc-47-Vsu" firstAttribute="height" secondItem="IPt-rg-MzO" secondAttribute="height" multiplier="0.65" id="lvU-Id-btY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IPt-rg-MzO"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kps-lP-bVa"/>
+                    <connections>
+                        <outlet property="tableView" destination="mmc-47-Vsu" id="gzm-W7-ZU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xug-ld-tef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

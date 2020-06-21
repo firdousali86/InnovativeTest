@@ -14,8 +14,8 @@ final class UserDefaultsHelper: NSObject {
     private override init() { }
 
     func getToken()->String? {
-        if((UserDefaults.standard.string(forKey: "Key")) != nil){
-            return UserDefaults.standard.string(forKey: "Key")
+        if((UserDefaults.standard.string(forKey: Constants.Keys.kAccessToken)) != nil){
+            return UserDefaults.standard.string(forKey: Constants.Keys.kAccessToken)
         }
         
         return nil

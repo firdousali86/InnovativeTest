@@ -35,7 +35,15 @@ class ViewController: UIViewController {
         }
     }
     
+    func openDashboardController(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let dashboardController = storyBoard.instantiateViewController(withIdentifier: "dashboard") as! DashboardController
+        dashboardController.modalPresentationStyle = .fullScreen
+        self.present(dashboardController, animated: true, completion: nil)
+    }
+    
     @IBAction func onEnterTap(){
+        
         if(!Utils.isStringEmptyOrNull(strToCheck: self.userNameField.text!) && !Utils.isStringEmptyOrNull(strToCheck: self.passwordField.text!)){
             
             ServiceManager.postLogin(username: self.userNameField.text!, password: self.passwordField.text!, completionHandler: { (response) in
@@ -43,6 +51,9 @@ class ViewController: UIViewController {
                 serviceObject.setObjectData(response as! NSDictionary)
                 
                 UserDefaultsHelper.sharedInstance.setToken(token: serviceObject.token!)
+                
+                self.openDashboardController()
+                
             }) { (error) in
                 
             }

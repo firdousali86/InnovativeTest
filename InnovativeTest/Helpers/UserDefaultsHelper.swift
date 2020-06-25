@@ -21,7 +21,7 @@ final class UserDefaultsHelper: NSObject {
         return nil
     }
     
-    func setToken(token:String) {
+    func setToken(token:String?) {
         UserDefaults.standard.set(token, forKey: Constants.Keys.kAccessToken)
     }
 }

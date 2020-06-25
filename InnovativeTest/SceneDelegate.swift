@@ -10,6 +10,8 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    static let sharedInstance = SceneDelegate()
+    
     var window: UIWindow?
 
 
@@ -33,6 +35,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         guard let _ = (scene as? UIWindowScene) else { return }
+    }
+    
+    func logoutOnSessionExpire(){
+        let rootViewController:UIViewController;
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        rootViewController = (mainStoryboard.instantiateViewController(withIdentifier: "login") as? UIViewController)!
+        
+        self.window?.rootViewController = rootViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

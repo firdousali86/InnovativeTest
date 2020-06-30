@@ -35,13 +35,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func openDashboardController(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let dashboardController = storyBoard.instantiateViewController(withIdentifier: "dashboard") as! DashboardController
-        dashboardController.modalPresentationStyle = .fullScreen
-        self.present(dashboardController, animated: true, completion: nil)
-    }
-    
     @IBAction func onEnterTap(){
         
         if(!Utils.isStringEmptyOrNull(strToCheck: self.userNameField.text!) && !Utils.isStringEmptyOrNull(strToCheck: self.passwordField.text!)){
@@ -52,8 +45,7 @@ class ViewController: UIViewController {
                 
                 UserDefaultsHelper.sharedInstance.setToken(token: authServiceObject.token!)
                 
-                self.openDashboardController()
-                
+                SceneDelegate.sharedInstance.presentController(parentVC: self, viewIdentified: "dashboard")
             }) { (error) in
                 
             }

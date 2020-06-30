@@ -44,6 +44,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window?.rootViewController = rootViewController
     }
+    
+    func presentController(parentVC:UIViewController, viewIdentified:String){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newController = storyBoard.instantiateViewController(withIdentifier: viewIdentified) as! DashboardController
+        newController.modalPresentationStyle = .fullScreen
+        parentVC.present(newController, animated: true, completion: nil)
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

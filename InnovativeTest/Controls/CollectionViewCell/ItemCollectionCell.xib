@@ -10,34 +10,34 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="ItemCollectionCell" customModule="InnovativeTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="255"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="240" height="255"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VL3-7E-e09">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="255"/>
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="iMN-IA-M8p">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="205"/>
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wky-gV-Nt0">
-                                <rect key="frame" x="0.0" y="205" width="240" height="50"/>
+                                <rect key="frame" x="0.0" y="100" width="150" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpP-JX-VBo">
-                                        <rect key="frame" x="10" y="0.0" width="140" height="50"/>
+                                        <rect key="frame" x="10" y="0.0" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qu-rX-YS0">
-                                        <rect key="frame" x="150" y="0.0" width="80" height="50"/>
+                                        <rect key="frame" x="60" y="0.0" width="80" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="Daf-n0-dbg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.15244996550000001" green="0.61222136019999995" blue="0.8123797774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -77,6 +77,7 @@
             <connections>
                 <outlet property="itemName" destination="FpP-JX-VBo" id="17C-L4-kSb"/>
                 <outlet property="itemPrice" destination="0qu-rX-YS0" id="kxF-0G-5uy"/>
+                <outlet property="parentView" destination="VL3-7E-e09" id="NGr-wp-ko7"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="104.46428571428571"/>
         </collectionViewCell>

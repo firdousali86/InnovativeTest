@@ -204,34 +204,26 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RAp-4S-gaB">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ddF-dj-ZPK">
                                             <size key="itemSize" width="270" height="150"/>
-                                            <size key="estimatedItemSize" width="270" height="150"/>
-                                            <size key="headerReferenceSize" width="15" height="0.0"/>
-                                            <size key="footerReferenceSize" width="15" height="0.0"/>
-                                            <inset key="sectionInset" minX="10" minY="50" maxX="10" maxY="10"/>
+                                            <size key="estimatedItemSize" width="150" height="150"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="10" minY="50" maxX="10" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="ueN-2t-h7h" customClass="ItemCollectionCell" customModule="InnovativeTest" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="27.5" width="250" height="225"/>
+                                                <rect key="frame" x="10" y="75" width="150" height="150"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aGw-Id-s5q">
-                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="225"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </collectionViewCellContentView>
-                                                <size key="customSize" width="250" height="225"/>
+                                                <size key="customSize" width="150" height="150"/>
                                             </collectionViewCell>
                                         </cells>
-                                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1th-EU-oiv">
-                                            <rect key="frame" x="0.0" y="0.0" width="15" height="240"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionReusableView>
-                                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ppW-Xw-iPn">
-                                            <rect key="frame" x="285" y="0.0" width="15" height="240"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionReusableView>
                                         <connections>
                                             <outlet property="dataSource" destination="wQO-sz-SRT" id="JpX-CG-WQy"/>
                                             <outlet property="delegate" destination="wQO-sz-SRT" id="bXt-s1-6R6"/>
@@ -246,7 +238,7 @@
                                     <constraint firstItem="RAp-4S-gaB" firstAttribute="top" secondItem="cDa-OB-rCn" secondAttribute="top" id="Z3Z-cz-ykt"/>
                                     <constraint firstAttribute="trailing" secondItem="RAp-4S-gaB" secondAttribute="trailing" id="eD5-vY-ZcN"/>
                                     <constraint firstItem="RAp-4S-gaB" firstAttribute="leading" secondItem="cDa-OB-rCn" secondAttribute="leading" id="g0c-Ej-lsd"/>
-                                    <constraint firstAttribute="bottom" secondItem="RAp-4S-gaB" secondAttribute="bottom" constant="10" id="lbt-AW-vOq"/>
+                                    <constraint firstAttribute="bottom" secondItem="RAp-4S-gaB" secondAttribute="bottom" id="lbt-AW-vOq"/>
                                     <constraint firstAttribute="bottom" secondItem="5cC-Pt-8EB" secondAttribute="bottom" id="mf0-OZ-nu5"/>
                                     <constraint firstAttribute="trailing" secondItem="5cC-Pt-8EB" secondAttribute="trailing" id="tAQ-1v-xNP"/>
                                 </constraints>

@@ -10,12 +10,18 @@ import UIKit
 
 class ItemCollectionCell: UICollectionViewCell {
 
+    @IBOutlet weak var parentView: UIView!
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemPrice: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        self.updateUI()
     }
 
+    func updateUI(){
+
+    }
 }
